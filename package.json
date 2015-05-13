@@ -2,7 +2,7 @@
   "name": "smoothit",
   "version": "1.0.3",
   "description": "Simple library to smoothly jump to anchor",
-  "main": "smoothit.js",
+  "main": "dist/smoothit.js",
   "scripts": {
     "test": "test"
   },
