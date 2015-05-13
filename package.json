@@ -1,0 +1,26 @@
+{
+  "name": "smoothit",
+  "version": "1.0.0",
+  "description": "Simple library to smoothly jump to anchor",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acouette/smoothit.git"
+  },
+  "keywords": [
+    "link",
+    "scroll",
+    "anchor",
+    "smooth",
+    "animate"
+  ],
+  "author": "Antoine Couette",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acouette/smoothit/issues"
+  },
+  "homepage": "https://github.com/acouette/smoothit"
+}
