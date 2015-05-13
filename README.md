@@ -5,8 +5,12 @@ Simple library to smoothly scroll to anchor
 import smoothit.js in your html file
 
 The library will change the anchor tags behaviour.
-Example :
-clicking on <a href="#myanchor">link</a> will smootly scroll the page to #myanchor element instead of instantly get there
+
+As an example, clicking on 
+```html
+<a href="#myanchor">link</a> 
+```
+will smootly scroll the page to #myanchor element instead of instantly get there.
 
 ### NPM package
 ```sh
