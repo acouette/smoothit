@@ -23,6 +23,8 @@
             }
         }
         function scrollSmoothly(targetOffset) {
+
+
             setTimeout(function () {
                 var toScroll;
                 if (targetOffset + window.innerHeight > document.body.offsetHeight) {
@@ -30,14 +32,10 @@
                 } else {
                     toScroll = targetOffset - window.scrollY;
                 }
-                var step;
-                if(Math.abs(toScroll) <1){
-                    step = toScroll;
-                }else{
-                    step = toScroll / 50;
-                }
-                if (step > 1) {
-                    window.scrollBy(0, step);
+                if (Math.abs(toScroll) < 1) {
+                    return;
+                } else {
+                    window.scrollBy(0, toScroll > 0 ? Math.ceil(toScroll / 50) : Math.floor(toScroll / 50));
                     scrollSmoothly(targetOffset);
                 }
             }, 5);
