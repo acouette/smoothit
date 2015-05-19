@@ -1,10 +1,7 @@
 # smoothit
 Simple library to smoothly scroll to anchor
 
-### Usage
-import smoothit.js in your html file
-
-The library will change the anchor tags behaviour.
+Will change the anchor tags behaviour.
 
 As an example, clicking on 
 ```html

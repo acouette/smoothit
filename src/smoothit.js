@@ -22,7 +22,6 @@
                 }());
             }
         }
-
         function scrollSmoothly(targetOffset) {
             setTimeout(function () {
                 var toScroll;
@@ -31,13 +30,15 @@
                 } else {
                     toScroll = targetOffset - window.scrollY;
                 }
-                var step = toScroll / 50;
-                if (step) {
-                    if (Math.abs(step) < 1) {
-                        step = step > 0 ? 1 : -1;
-                    }
+                var step;
+                if(Math.abs(toScroll) <1){
+                    step = toScroll;
+                }else{
+                    step = toScroll / 50;
+                }
+                if (step > 1) {
                     window.scrollBy(0, step);
-                    scrollSmoothly(targetOffset, step, toScroll - step);
+                    scrollSmoothly(targetOffset);
                 }
             }, 5);
         }
